@@ -29,20 +29,20 @@
       align-items: center;
       margin-bottom: 20px;
     }
-    /* الآن QR code على اليسار والصورة على اليمين */
-    .qrcode {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-      order: 0; /* أول عنصر */
-    }
+    /* الآن الصورة على اليسار و QR code على اليمين */
     .photo {
       width: 150px;
       height: 150px;
       object-fit: cover;
       border-radius: 10px;
       border: 3px solid #007BFF;
+      order: 0; /* أول عنصر */
+    }
+    .qrcode {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
       order: 1; /* ثاني عنصر */
     }
     .buttons {
@@ -87,8 +87,8 @@
 <body>
   <div class="container">
     <div class="header">
-      <img src="qrcode.png" alt="QR Code" class="qrcode" />
       <img src="photo.jpg" alt="Photo de Mouad" class="photo" />
+      <img src="qrcode.png" alt="QR Code" class="qrcode" />
     </div>
 
     <h1>Mouad Ait Benhaddi</h1>
