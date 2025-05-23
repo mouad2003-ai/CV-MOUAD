@@ -29,14 +29,21 @@
       align-items: center;
       margin-bottom: 20px;
     }
-    .photo, .qrcode {
+    /* الآن QR code على اليسار والصورة على اليمين */
+    .qrcode {
       width: 150px;
       height: 150px;
       object-fit: cover;
       border-radius: 10px;
+      order: 0; /* أول عنصر */
     }
     .photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
       border: 3px solid #007BFF;
+      order: 1; /* ثاني عنصر */
     }
     .buttons {
       text-align: center;
@@ -51,6 +58,7 @@
       color: white;
       cursor: pointer;
       text-decoration: none;
+      font-size: 16px;
     }
     .buttons button:hover, .buttons a:hover {
       background-color: #0056b3;
@@ -69,6 +77,7 @@
       color: green;
       font-weight: bold;
       margin-top: 10px;
+      font-size: 18px;
     }
     ul {
       padding-left: 20px;
@@ -234,8 +243,8 @@
 
     function showMessage(language) {
       const message = language === 'fr'
-        ? "Merci pour le téléchargement du CV"
-        : "Thank you for downloading the CV";
+        ? "Merci pour le téléchargement du CV 🙂"
+        : "Thank you for downloading the CV 🙂";
       document.getElementById('message').textContent = message;
     }
   </script>
