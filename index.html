@@ -12,7 +12,7 @@
       padding: 20px;
     }
     .container {
-      max-width: 850px;
+      max-width: 900px;
       margin: auto;
       padding: 30px;
       background: white;
@@ -22,6 +22,21 @@
     h1 {
       text-align: center;
       color: #007BFF;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .photo, .qrcode {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .photo {
+      border: 3px solid #007BFF;
     }
     .buttons {
       text-align: center;
@@ -52,13 +67,21 @@
     .message {
       text-align: center;
       color: green;
-      margin-top: 15px;
       font-weight: bold;
+      margin-top: 10px;
+    }
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <div class="header">
+      <img src="qrcode.png" alt="QR Code" class="qrcode" />
+      <img src="photo.jpg" alt="Photo de Mouad" class="photo" />
+    </div>
+
     <h1>Mouad Ait Benhaddi</h1>
 
     <div class="buttons">
@@ -70,6 +93,7 @@
 
     <div id="message" class="message"></div>
 
+    <!-- SECTION FR -->
     <div id="french" class="lang-section visible">
       <div class="section">
         <h2>Contact</h2>
@@ -79,6 +103,7 @@
         <p><strong>Date de naissance:</strong> 26/06/2003</p>
         <p><strong>Nationalité:</strong> Marocaine</p>
       </div>
+
       <div class="section">
         <h2>Formation</h2>
         <ul>
@@ -87,8 +112,53 @@
           <li>2021-2022 : Baccalauréat Sciences de Gestion Comptable - Hoummane El Fatwaki, Rabat</li>
         </ul>
       </div>
+
+      <div class="section">
+        <h2>Expériences Professionnelles</h2>
+        <ul>
+          <li>2024 (1 mois) : Stagiaire comptable - ONCF, Rabat</li>
+          <li>2023 (1 mois) : Stagiaire comptable - T.H CONSULTING, Rabat</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Compétences</h2>
+        <h3>Outils informatiques</h3>
+        <ul>
+          <li>Word</li>
+          <li>Excel</li>
+          <li>PowerPoint</li>
+        </ul>
+        <h3>Compétences personnelles</h3>
+        <ul>
+          <li>Organisation</li>
+          <li>Communication</li>
+          <li>Dynamique</li>
+          <li>Sérieux</li>
+          <li>Relationnel</li>
+          <li>Rigueur</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Langues</h2>
+        <ul>
+          <li>Arabe : Très bonnes notions</li>
+          <li>Français : Bonnes notions</li>
+          <li>Anglais : Notions de base</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Centres d’intérêt</h2>
+        <ul>
+          <li>Musique</li>
+          <li>Sport</li>
+        </ul>
+      </div>
     </div>
 
+    <!-- SECTION EN -->
     <div id="english" class="lang-section">
       <div class="section">
         <h2>Contact</h2>
@@ -98,12 +168,57 @@
         <p><strong>Birth Date:</strong> 26/06/2003</p>
         <p><strong>Nationality:</strong> Moroccan</p>
       </div>
+
       <div class="section">
         <h2>Education</h2>
         <ul>
           <li>2023-2024: 2nd year BTS in Accounting and Management - ALFARABI, Salé</li>
           <li>2022-2023: 1st year BTS in Accounting and Management - ALFARABI, Salé</li>
           <li>2021-2022: Baccalaureate in Accounting Management Sciences - Hoummane El Fatwaki, Rabat</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Work Experience</h2>
+        <ul>
+          <li>2024 (1 month): Accounting Intern - ONCF, Rabat</li>
+          <li>2023 (1 month): Accounting Intern - T.H CONSULTING, Rabat</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Skills</h2>
+        <h3>IT Tools</h3>
+        <ul>
+          <li>Word</li>
+          <li>Excel</li>
+          <li>PowerPoint</li>
+        </ul>
+        <h3>Personal Skills</h3>
+        <ul>
+          <li>Organization</li>
+          <li>Communication</li>
+          <li>Energetic</li>
+          <li>Serious</li>
+          <li>People Skills</li>
+          <li>Precision</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Languages</h2>
+        <ul>
+          <li>Arabic: Very good</li>
+          <li>French: Good</li>
+          <li>English: Basic</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Interests</h2>
+        <ul>
+          <li>Music</li>
+          <li>Sports</li>
         </ul>
       </div>
     </div>
