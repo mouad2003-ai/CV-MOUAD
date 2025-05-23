@@ -1,31 +1,164 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Photo à droite, QR à gauche</title>
-<style>
-  .header {
-    display: flex;
-    align-items: center;
-  }
-  .header .qrcode {
-    width: 150px;
-  }
-  .header .photo {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 3px solid #007BFF;
-    margin-left: auto; /* تدفع الصورة لليمين */
-    object-fit: cover;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Mouad Ait Benhaddi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #e9f0f7;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 850px;
+      background: white;
+      margin: auto;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    img {
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 3px solid #007BFF;
+    }
+    .qrcode {
+      width: 150px;
+      margin-left: auto; /* يدفع QR code لليمين */
+    }
+    h1 {
+      color: #007BFF;
+      margin: 20px 0 10px;
+      text-align: center;
+    }
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 5px;
+    }
+    h3 {
+      color: #444;
+      margin-top: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    p, li {
+      font-size: 16px;
+      color: #444;
+    }
+    .section {
+      margin-bottom: 25px;
+    }
+    a.button {
+      display: inline-block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    a.button:hover {
+      background-color: #0056b3;
+    }
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
-  <div class="header">
-    <img src="qrcode.png" alt="QR code" class="qrcode" />
-    <img src="photo.jpg" alt="Photo" class="photo" />
+  <div class="container">
+    <div class="header">
+      <img src="photo.jpg" alt="Photo de Mouad" class="photo" />
+      <img src="qrcode.png" alt="QR vers le site" class="qrcode" />
+    </div>
+
+    <h1>Mouad Ait Benhaddi</h1>
+    <div style="text-align:center;">
+      <a class="button" href="cv.pdf" download>Télécharger le CV (PDF)</a>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p><strong>Adresse:</strong> G93N13 Bouitat CYM, Rabat</p>
+      <p><strong>Téléphone:</strong> +212 777961056</p>
+      <p><strong>Email:</strong> moadaitbenhaddio@gmail.com</p>
+      <p><strong>Date de naissance:</strong> 26/06/2003</p>
+      <p><strong>Nationalité:</strong> Marocaine</p>
+      <p><strong>Site Web:</strong> <a href="https://mouad2003-ai.github.io/CV-MOUAD/" target="_blank">https://mouad2003-ai.github.io/CV-MOUAD/</a></p>
+    </div>
+
+    <div class="section">
+      <h2>Formation</h2>
+      <ul>
+        <li>2023-2024 : 2ème année BTS Comptabilité et Gestion - ALFARABI, Salé</li>
+        <li>2022-2023 : 1ère année BTS Comptabilité et Gestion - ALFARABI, Salé</li>
+        <li>2021-2022 : Baccalauréat Sciences de Gestion Comptable - Hoummane El Fatwaki, Rabat</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Expériences Professionnelles</h2>
+      <ul>
+        <li>2024 (1 mois) : Stagiaire comptable - ONCF, Rabat</li>
+        <li>2023 (1 mois) : Stagiaire comptable - T.H CONSULTING, Rabat</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Compétences</h2>
+
+      <h3>Outils informatiques</h3>
+      <ul>
+        <li>Word</li>
+        <li>Excel</li>
+        <li>PowerPoint</li>
+      </ul>
+
+      <h3>Compétences personnelles</h3>
+      <ul>
+        <li>Organisation</li>
+        <li>Communication</li>
+        <li>Dynamique</li>
+        <li>Sérieux</li>
+        <li>Relationnel</li>
+        <li>Rigueur</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Langues</h2>
+      <ul>
+        <li>Arabe : Très bonnes notions</li>
+        <li>Français : Bonnes notions</li>
+        <li>Anglais : Notions de base</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Centres d’intérêt</h2>
+      <ul>
+        <li>Musique</li>
+        <li>Sport</li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
